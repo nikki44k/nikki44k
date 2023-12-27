@@ -32,7 +32,7 @@
   margin-bottom: 10px;
 }
 .text h4{
-  font-size: 20px;
+  font-size: 40px;
   font-weight: 400;
   margin-bottom: 20px;
 }
@@ -46,8 +46,8 @@
 }
 .learning{
   font-size: 18px;
-  background: #c13300;
-  color: #000000;
+  background: #000000;
+  color: #ffe700;
   text-decoration: none;
   border: none;
   padding: 8px 25px;
