@@ -9,7 +9,7 @@
   height: 100vh;
   width: 100%
   padding: 90px 0;
-  background: #2cc9c3;
+  background: #ffe700;
 }
 .pic{
   height: auto;
@@ -46,8 +46,8 @@
 }
 .learning{
   font-size: 18px;
-  background: #4070f4;
-  color: #fff;
+  background: #c13300;
+  color: #000000;
   text-decoration: none;
   border: none;
   padding: 8px 25px;
