@@ -28,9 +28,13 @@ public class ball:
     //Game ends
     if(transform.position.x < manager.bottomLeft.x + radius && direction.x < 0){
       Debug.Log("Right player wins!!");
+      Time.timeScale = 0;
+      enabled = false;
     }
     if(transform.position.x > manager.topRight.x - radius && direction.x > 0){
       Debug.Log("Left player wins!!");
+      Time.timeScale = 0;
+      enabled = false;
     }
   }
   void OnTriggerEnter2D(Collider2D other){
