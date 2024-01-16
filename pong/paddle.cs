@@ -7,9 +7,10 @@ public class paddle:
     [SerializeField]
     float speed;
     float height;
-    bool is_r;
+    public bool is_r;
     string input;
-    void start(){
+    
+    void Start(){
       height = transform.localScale.y;      
     }
     
@@ -30,7 +31,7 @@ public class paddle:
       transform.name = input;
     }
 
-    void update(){
+    void Update(){
       float move = Input.GetAxis(input) * Time.deltaTime * speed;
       
       //Paddle movement
