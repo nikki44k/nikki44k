@@ -32,6 +32,14 @@ public class paddle:
 
     void update(){
       float move = Input.GetAxis(input) * Time.deltaTime * speed;
+      
+      //Paddle movement
+      if (transform.position.y < manager.bottomLeft.y + height / 2 && move < 0){
+        move = 0;
+      }
+      if (transform.position.y > manager.topRight.y - height / 2 && move < 0){
+        move = 0;
+      }
       transform.Translate(move * v.up);
     }
     
