@@ -11,7 +11,7 @@ public class manager:
     public static v bottomLeft;
   }
 
-void start(){
+void Start(){
   //Ball created
   Instantiate (b);
   
@@ -25,6 +25,6 @@ void start(){
   topRight = Camera.main.ScreenToWorldPoint(new v(Screen.width, Screen.height));
 }
 
-void update(){
+void Update(){
   
 }
