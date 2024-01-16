@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class paddle: 
   MonoBehaviour{
-    float height;
+    [SerializeField]
     float speed;
+    float height;
     bool is_r;
     string input;
     void start(){
-      speed = 5f;
       height = transform.localScale.y;      
     }
     
