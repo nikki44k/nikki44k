@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang= "en">
+<head>
+    <meta charset= "utf-8">
+    <meta name= "viewport" content= "width=device-width, initial-scale=1.0">
+    <title> Contact Me</title>
+    <link rel= "stylesheet" href= "style.css">
+</head>
+<body>
+
+    <header>
+        <a href= "Home.html"> Home</a>
+        <a href= "About.html"> About </a>
+        <a href= "Portfolio.html"> Portfolio </a>
+        <a href= "Contact.html"class="active"> Contact </a>
+        <a href= "SignIn.html"> Sign In </a>
+        <a href= "SignUp.html"> Sign Up </a>
+    </header>
+
+    <div class="container">
+        <h1> Contact Me </h1>
+        <form action= "Contact.php" method= "POST">
+            <label for= "name"> Name: </label> <br>
+            <input type= "text" id="name" name="name" required> <br> <br>
+            
+            <label for= "email"> Email: </label> <br>
+            <input type= "email" id="email" name="email" required> <br> <br>
+            
+            <label for= "message"> Message: </label> <br>
+            <textarea id= "message" name="message" rows="5" required> </textarea> <br> <br>
+            
+            <input type= "submit" value= "Submit">
+        </form>
+    </div>
+
+    <footer class= "footer">
+        <p> &copy; 2024 My Portfolio </p>
+        <a href= "Terms.html"> Terms and Conditions </a> |
+        <a href= "Privacy.html"> Privacy Policy </a> |
+        <a href= "Cookie.html"> Cookie Policy </a>
+    </footer>
+
+</body>
+</html>
