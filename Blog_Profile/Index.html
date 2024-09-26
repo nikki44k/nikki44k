@@ -1,1 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shutter - Home</title>
+    <!-- Bootstrap CSS -->
+    <link href = "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel = "stylesheet">
+	<script	src = "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.bundle.min.js"></script>
+    <!-- Custom CSS -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
 
+<body>
+    <!-- Left Sidebar Menu -->
+    <div class="sidebar">
+        <h3 class="menu-title">SHUTTER</h3>
+        <a href="Index.html" class="menu-item active">Home</a>
+        <a href="Photos.html" class="menu-item">Photos</a>
+        <a href="Bio.html" class="menu-item">Bio</a>
+        <a href="Blog.html" class="menu-item">Blog</a>
+        <a href="Contact.html" class="menu-item">Contact</a>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/profile.php?id=61562666678328" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://x.com/nikhitha2005" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/chhich_hi/" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="content">
+        <div class="container gallery">
+            <div class="row">
+				<h2><center>MY BLOG PAGE</center></h2>
+                <div class="col-md-4">
+                    <img src="Images/Img4.jpg" class="img-fluid" alt="Img4" data-toggle="modal" data-target="#imageModal" data-image="Images/Img4.jpg">
+                </div>
+                <div class="col-md-4">
+					<img src="Images/Img5.jpg" class="img-fluid" alt="Img5" data-toggle="modal" data-target="#imageModal" data-image="Images/Img5.jpg">
+				</div>
+                <div class="col-md-4">
+                    <img src="Images/Img6.jpg" class="img-fluid" alt="Img6" data-toggle="modal" data-target="#imageModal" data-image="Images/Img6.jpg">
+                </div>
+                <div class="col-md-4">
+                    <img src="Images/Img7.jpg" class="img-fluid" alt="Img7" data-toggle="modal" data-target="#imageModal" data-image="Images/Img7.jpg">
+                </div>
+                <div class="col-md-4">
+                    <img src="Images/Img8.jpg" class="img-fluid" alt="Img8" data-toggle="modal" data-target="#imageModal" data-image="Images/Img8.jpg">
+                </div>
+                <div class="col-md-4">
+                    <img src="Images/Img9.jpg" class="img-fluid" alt="Img9" data-toggle="modal" data-target="#imageModal" data-image="Images/Img9.jpg">
+                </div>
+            </div>
+        </div>
+
+<!-- Modal Structure so  image opens up (Bootstrap) -->
+    <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="imageModalLabel">Image Preview</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img id="modalImage" src="" alt="Modal Image" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // jQuery to update the modal image source dynamically
+        $('#imageModal').on('show.bs.modal', function (event) {
+            var button = $(event.relatedTarget);
+            var imageSrc = button.data('image'); 
+            var modal = $(this);
+            modal.find('#modalImage').attr('src', imageSrc);
+        });
+    </script>
+</body>
+</html>
