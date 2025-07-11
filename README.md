@@ -2,6 +2,6 @@
 - 👀 I’m interested in painting, learning something new and sleeping
 - 🌱 I’m currently learning AWS, AI/ML frameworks and algorithms, Computer vision & python
 - 💞️ I’m looking to collaborate on python project like solving a massive algorithm easily
-- 📫 How to reach me - just dm me
+- 📫 How to reach me - nikhithakilari@gmail.com
 
 
